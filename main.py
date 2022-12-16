@@ -7,7 +7,9 @@ import plotly.graph_objects as go
 from scipy.ndimage import gaussian_filter
 
 # Training data file
-train_data_file = ""
+
+
+train_data_file = "./traindata.txt"
 
 # read training data
 with open(train_data_file) as f:
@@ -35,7 +37,7 @@ model.fit([ngrams], vocabulary_text=training_data)
 print(model.vocab)
 
 # testing data file
-test_data_file = ""
+test_data_file = "./testdata.txt"
 
 # Read testing data
 with open(test_data_file) as f:

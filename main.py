@@ -1,10 +1,15 @@
 import re
+
+import nltk
+nltk.download('punkt')
+
 from nltk.util import ngrams, pad_sequence, everygrams
 from nltk.tokenize import word_tokenize
 from nltk.lm import MLE, WittenBellInterpolated
 import numpy as np
 import plotly.graph_objects as go
 from scipy.ndimage import gaussian_filter
+
 
 # Training data file
 

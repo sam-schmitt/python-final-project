@@ -63,6 +63,9 @@ for i, item in enumerate(testing_data[n-1:]):
 
 scores_np = np.array(scores)
 
+
+
+
 # set width and height
 width = 8
 height = np.ceil(len(testing_data)/width).astype("int32")

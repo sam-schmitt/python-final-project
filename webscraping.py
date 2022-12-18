@@ -1,20 +1,33 @@
 
 from bs4 import BeautifulSoup
 import requests
- 
-# get URL
-url = "https://en.wikipedia.org/wiki/Banana"
-page = requests.get(url)
- 
-# scrape webpage
-soup = BeautifulSoup(page.content, 'html.parser')
+try:
+    from googlesearch import search
+except ImportError:
+    print("No module named 'google' found")
 
-object = soup.find(id="bodyContent")
 
-ptags = object.find_all("p")
+def scrape_web(searchTerm):
+    # to search
+    query = searchTerm + " wiki"
+    
+    url = ""
+    for j in search(query, tld="co.in", num=1, stop=1, pause=2):
+        url = j
 
-print(ptags[1].get_text())
+    print(url)
 
-f = open("wikitraindata.txt", "w")
-f.write(ptags[1].get_text())
-f.close()
+    page = requests.get(url)
+    
+    # scrape webpage
+    soup = BeautifulSoup(page.content, 'html.parser')
+
+    object = soup.find(id="bodyContent")
+
+    ptags = object.find_all("p")
+
+    print(ptags[1].get_text())
+
+    f = open("wikitraindata.txt", "w")
+    f.write(ptags[1].get_text())
+    f.close()

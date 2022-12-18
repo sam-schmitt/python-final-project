@@ -10,36 +10,36 @@ import numpy as np
 import plotly.graph_objects as go
 from scipy.ndimage import gaussian_filter
 
-def test_response(test_text):
+def ai_test_response(test_text):
 
 
 # Training data file
 
 
-    # train_data_files = [
-    #     './training-data/banana-report/1.txt', 
-    #     './training-data/banana-report/2.txt', 
-    #     './training-data/banana-report/3.txt',
-    #     './training-data/banana-report/4.txt',
-    #     './training-data/banana-report/5.txt',
-    #     './training-data/banana-report/6.txt',
-    #     './training-data/banana-report/7.txt',
-    #     './training-data/banana-report/8.txt',
-    #     './training-data/banana-report/9.txt',
-    #     './training-data/banana-report/10.txt',
-    # ]  # list of training data files
     train_data_files = [
-        './training-data/rose-poem/1.txt', 
-        './training-data/rose-poem/2.txt', 
-        './training-data/rose-poem/3.txt',
-        './training-data/rose-poem/4.txt',
-        './training-data/rose-poem/5.txt',
-        './training-data/rose-poem/6.txt',
-        './training-data/rose-poem/7.txt',
-        './training-data/rose-poem/8.txt',
-        './training-data/rose-poem/9.txt',
-        './training-data/rose-poem/10.txt',
+        './training-data/banana-report/1.txt', 
+        './training-data/banana-report/2.txt', 
+        './training-data/banana-report/3.txt',
+        './training-data/banana-report/4.txt',
+        './training-data/banana-report/5.txt',
+        './training-data/banana-report/6.txt',
+        './training-data/banana-report/7.txt',
+        './training-data/banana-report/8.txt',
+        './training-data/banana-report/9.txt',
+        './training-data/banana-report/10.txt',
     ]  # list of training data files
+    # train_data_files = [
+    #     './training-data/rose-poem/1.txt', 
+    #     './training-data/rose-poem/2.txt', 
+    #     './training-data/rose-poem/3.txt',
+    #     './training-data/rose-poem/4.txt',
+    #     './training-data/rose-poem/5.txt',
+    #     './training-data/rose-poem/6.txt',
+    #     './training-data/rose-poem/7.txt',
+    #     './training-data/rose-poem/8.txt',
+    #     './training-data/rose-poem/9.txt',
+    #     './training-data/rose-poem/10.txt',
+    # ]  # list of training data files
 
     train_texts = []
     for train_data_file in train_data_files:

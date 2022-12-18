@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
-from multiple import test_response
+from multiple import ai_test_response
+from single import normal_test_response
 
 app = Flask(__name__)
 
@@ -9,8 +10,15 @@ def index():
         # Get the data from the form
         data = request.form['data']
 
-        # Use the data in your Python code
-        test_response(data)
+        
+        usingAI = request.form.getlist('aicheck')
+        if usingAI:
+            ai_test_response(data)
+        else:
+            print("here")
+            normal_test_response(data)
+        
+        
 
         return render_template('form.html')
     else:

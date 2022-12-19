@@ -1,0 +1,74 @@
+.background {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(255, 188, 188), rgb(255, 73, 73));
+ }
+
+ 
+ .banner {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+ }
+ 
+ .title {
+    margin: auto;
+    padding: 50px 50px;
+    width: 50%;
+    text-align: center;
+    
+ }
+ 
+ .enterdata {
+    width: 100%;
+    height: 100%;
+    padding: 140px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+ }
+
+ .entertopic {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+ 
+ .dataform {
+    padding: 20px 20px;
+    margin-top: 0%;
+    margin-left: 40%;
+    margin-right: 40%;
+ 
+ }
+ .submit {
+    background-color: #cc0000;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 20px;
+    width: 100%; 
+    margin: auto;
+    border: none;
+    cursor: pointer;
+ }
+ 
+ button:hover {
+    opacity: 0.8;
+ }
+ 
+ 
+ .checkbox {
+    text-align: center;
+    width: 20%;
+    left: 40%;
+    top: 70%;
+    
+ }

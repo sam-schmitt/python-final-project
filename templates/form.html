@@ -1,9 +1,34 @@
-<form action="/" method="POST">
-	<label for="data">Enter the data:</label><br />
-	<input type="text" id="data" name="data" /><br />
-	<label for="data">Enter the topic:</label><br />
-	<input type="text" id="topic" name="topic" /><br />
-	<label for="usingAI"> Checking against AI?</label><br>
-	<input type="checkbox" id="aicheck" name="aicheck" value="True">
-	<input type="submit" value="Submit" />
-</form>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Python Project</title>
+		
+		<link rel="stylesheet" type="text/css" href="static/css/global.css">
+	</head>
+	<body>
+		<div class="background">
+			<div class="banner">
+				<h1>Plagiarism Checker</h1>
+			</div>
+			<form action="/" method="POST">
+				<div class="dataform">
+					<label for="data">Enter the data:</label><br />
+					<textarea class="enterdata" type="text" id="data" name="data" ></textarea><br />
+				
+					<label for="data">Enter the topic:</label><br />
+					<input class="entertopic" type="text" id="topic" name="topic" /><br />
+				
+					<label for="usingAI"> Checking against AI?</label><br>
+					<input type="checkbox" id="aicheck" name="aicheck" value="True">
+				
+					
+					<input class="submit" type="submit" value="Submit" />
+				</div>
+				
+			</form>
+		</div>
+	</body>
+</html>
+
+
